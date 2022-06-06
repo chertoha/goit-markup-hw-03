@@ -82,6 +82,7 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
   /* outline: 1px solid red; */
+  /* background-color: tomato; */
 }
 
 /* Header */
@@ -281,10 +282,30 @@ ul {
 
 /* Portfolio */
 
+.portfolio-filter-list {
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-filter-list li + li {
+  margin-left: 8px;
+}
+
 .portfolio-button {
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.62;
+}
+
+.portfolio-list {
+  margin-top: -30px;
+  margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-list .link:hover,
@@ -292,8 +313,22 @@ ul {
   color: inherit;
 }
 
-.portfolio-list li {
+.portfolio-list .item {
+  margin-top: 30px;
+  margin-left: 30px;
   background-color: var(--secondary-light-color);
+}
+
+.portfolio-list-img {
+  display: block;
+}
+
+.porfolio-link-content {
+  /* margin-top: 20px; */
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .portfolio-list-title {
@@ -305,6 +340,7 @@ ul {
 }
 
 .portfolio-list-text {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
 }
